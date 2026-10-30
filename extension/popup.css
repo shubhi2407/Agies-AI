@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin:0; width:320px; padding:16px; background:#070d18; color:#e7eef8; font:13px Arial,sans-serif; }
+.header { display:flex; gap:10px; align-items:center; margin-bottom:14px; }
+.logo { width:38px; height:38px; display:grid; place-items:center; border-radius:10px; background:#11b5d9; color:#06111a; font-size:20px; }
+.header strong { display:block; font-size:14px; }
+.header small { display:block; margin-top:3px; color:#6dd9ee; font-size:10px; text-transform:uppercase; letter-spacing:.12em; }
+.status { display:flex; align-items:center; gap:8px; color:#9ae6b4; font-weight:600; padding:9px 11px; border:1px solid #174c3a; background:#0b1c19; border-radius:9px; }
+.dot { width:8px; height:8px; border-radius:50%; background:#22c55e; box-shadow:0 0 9px #22c55e; }
+.card { margin-top:12px; padding:12px; border:1px solid #1b2940; background:#0b1220; border-radius:10px; }
+.label { color:#72839a; font-size:10px; letter-spacing:.1em; font-weight:700; }
+#decision { margin-top:8px; font-weight:700; font-size:14px; }
+#details { margin-top:5px; color:#8fa0b5; line-height:1.4; font-size:12px; }
+.footer { margin-top:12px; color:#64748b; font-size:10px; line-height:1.4; }
+
+.employee-select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #233150;
+  background: #111b2e;
+  color: #e5edf7;
+  font-size: 12px;
+}
+.identity-status {
+  margin-top: 7px;
+  color: #7f8da3;
+  font-size: 10px;
+}

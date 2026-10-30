@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "AgiesAI Sentinel",
+  "version": "1.6.0",
+  "description": "AgiesAI Sentinel — pre-submit sensitive-data protection for ChatGPT with incident action auditing.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AgiesAI Sentinel",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

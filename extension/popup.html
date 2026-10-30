@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AgiesAI Sentinel</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🛡</div>
+    <div><strong>AgiesAI Sentinel</strong><small>ChatGPT Protection</small></div>
+  </div>
+  <div class="status"><span class="dot"></span><span>Protection Active</span></div>
+  <div class="card">
+    <div class="label">EMPLOYEE IDENTITY</div>
+    <select id="employeeSelect" class="employee-select">
+      <option value="">Loading employees…</option>
+    </select>
+    <div id="identityStatus" class="identity-status">Loading identity…</div>
+  </div>
+  <div class="card">
+    <div class="label">LAST SECURITY CHECK</div>
+    <div id="decision">No checks yet</div>
+    <div id="details">Open ChatGPT and submit a message.</div>
+  </div>
+  <div class="footer">Sensitive content is analyzed before submission.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
